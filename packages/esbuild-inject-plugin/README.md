@@ -4,6 +4,14 @@ This plugin patches `build` function of [esbuild](https://esbuild.github.io/) to
 
 Intended to be used in [Remix](https://remix.run) projects, which currently doesn’t support custom esbuild plugins.
 
+## Install
+
+```sh
+npm install -D @lukalabs/esbuild-inject-plugin
+# or
+yarn add -D @lukalabs/esbuild-inject-plugin
+```
+
 ## Usage with Remix
 
 1. Replace `build` and `dev` scripts in your `package.json` (you can also use [binode](https://github.com/kentcdodds/binode) to make it work on Windows)
@@ -19,7 +27,7 @@ Intended to be used in [Remix](https://remix.run) projects, which currently does
 ```
 
 2. Add `esbuild-plugins.js` to project’s root folder (or provide config path via `ESBUILD_INJECT_PLUGIN_CONFIG` environment variable)
-([@lukalabs/esbuild-styled-components](https://github.com/lukalabs/lukalabs-npm/projects/esbuild-styled-components) used here as an example)
+([@lukalabs/esbuild-styled-components](https://github.com/lukalabs/lukalabs-npm/tree/main/packages/esbuild-styled-components) used here as an example)
 
 **esbuild-plugins.js**
 ```js

@@ -2,9 +2,17 @@
 
 It is like [Styled Components babel plugin](https://github.com/styled-components/babel-plugin-styled-components), but for [esbuild](https://esbuild.github.io/).
 
+## Install
+
+```sh
+npm install -D @lukalabs/esbuild-styled-components
+# or
+yarn add -D @lukalabs/esbuild-styled-components
+```
+
 ## Usage with Remix
 
-(see [esbuild-inject-plugin](https://github.com/lukalabs/lukalabs-npm/projects/esbuild-inject-plugin/README.md) for how to setup a Remix project)
+(see [esbuild-inject-plugin](https://github.com/lukalabs/lukalabs-npm/tree/main/packages/esbuild-inject-plugin/README.md) for how to setup a Remix project)
 
 **esbuild-plugins.js**
 ```js
