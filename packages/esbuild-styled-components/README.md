@@ -42,3 +42,12 @@ const options = {
   meaninglessFileNames = ['index']  
 };
 ```
+
+## License
+
+[MIT](https://github.com/lukalabs/lukalabs-npm/blob/main/LICENSE)
+
+esbuild-styled-components uses these libraries:
+
+- [tree-sitter](https://github.com/tree-sitter/tree-sitter) (MIT license)
+- [tree-sitter-typescript](https://github.com/tree-sitter/tree-sitter-typescript) (MIT license)

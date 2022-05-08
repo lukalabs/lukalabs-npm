@@ -37,3 +37,7 @@ exports.plugins = function(plugins) {
   return [styledComponentsPlugin(), ...plugins];
 }
 ```
+
+## License
+
+[MIT](https://github.com/lukalabs/lukalabs-npm/blob/main/LICENSE)
