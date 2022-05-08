@@ -1,0 +1,36 @@
+{
+  "name": "@lukalabs/esbuild-styled-components",
+  "version": "1.0.0",
+  "description": "esbuild styled-components plugin to replace styled-components/macro",
+  "main": "index.js",
+  "author": "Alexander Kuznetsov <alexkuz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tree-sitter": "0.20.0",
+    "tree-sitter-typescript": "0.19.0"
+  },
+  "devDependencies": {
+    "babel-test": "0.2.4",
+    "jest": "27.5.1",
+    "jest-file-snapshot": "0.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukalabs/lukalabs-npm.git"
+  },
+  "keywords": [
+    "esbuild",
+    "remix",
+    "styled-components"
+  ],
+  "bugs": {
+    "url": "https://github.com/lukalabs/lukalabs-npm/issues"
+  },
+  "homepage": "https://github.com/lukalabs/lukalabs-npm#readme"
+}

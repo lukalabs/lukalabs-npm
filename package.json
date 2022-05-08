@@ -1,0 +1,7 @@
+{
+  "name": "lukalabs",
+  "version": "1.0.0",
+  "description": "A collection of various NPM packages",
+  "private": true,
+  "workspaces": ["packages/*"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@lukalabs/esbuild-inject-plugin",
+  "version": "1.0.1",
+  "description": "Monkey-patching esbuild to inject custom plugin for Remix",
+  "main": "index.js",
+  "author": "Alexander Kuznetsov <alexkuz@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "esbuild": "0.14.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukalabs/lukalabs-npm.git"
+  },
+  "keywords": [
+    "esbuild",
+    "remix"
+  ],
+  "bugs": {
+    "url": "https://github.com/lukalabs/lukalabs-npm/issues"
+  },
+  "homepage": "https://github.com/lukalabs/lukalabs-npm#readme"
+}
