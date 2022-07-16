@@ -6,7 +6,7 @@
   "author": "Alexander Kuznetsov <alexkuz@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "esbuild": "0.14.22"
+    "esbuild": "~0.14.22"
   },
   "repository": {
     "type": "git",
