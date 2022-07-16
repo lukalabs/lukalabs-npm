@@ -1,6 +1,6 @@
 {
   "name": "@lukalabs/esbuild-inject-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Monkey-patching esbuild to inject custom plugin for Remix",
   "main": "index.js",
   "author": "Alexander Kuznetsov <alexkuz@gmail.com>",
