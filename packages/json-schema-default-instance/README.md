@@ -1,3 +1,8 @@
+<table><tr></tr><tr><td><h3>🍴</h3></td><td><b>This is a fork of now archived <a href="https://github.com/dancasey/json-schema-default-instance"><code>
+json-schema-default-instance</code></a> package by <a href="https://github.com/dancasey">
+Dan Casey</a></b></td></tr></table>
+
+
 # json-schema-default-instance
 
 [![Build Status](https://travis-ci.org/dancasey/json-schema-default-instance.svg?branch=master)](https://travis-ci.org/dancasey/json-schema-default-instance)
