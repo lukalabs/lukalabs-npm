@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true,
+    "lib": ["dom", "es5", "scripthost", "es2015.iterable", "es2015.promise"],
+    "esModuleInterop": true
+  },
+  "files": [
+    "src/instantiator.ts",
+    "src/test.ts"
+  ]
+}

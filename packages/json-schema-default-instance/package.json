@@ -1,0 +1,50 @@
+{
+  "name": "@lukalabs/json-schema-default-instance",
+  "version": "1.4.0",
+  "description": "Creates an object as an instance of the given schema using its default properties.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "prepublish": "tsc",
+    "pretest": "tsc"
+  },
+  "author": "Dan Casey <dc181@icloud.com> (https://github.com/dancasey)",
+  "contributors": [
+    "Alexander <alexkuz@gmail.com> (http://kuzya.org/)"
+  ],
+  "license": "PDDL-1.0",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.8.4",
+    "ajv": "^8.11.0",
+    "ava": "^4.3.3",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.4"
+  },
+  "typings": "dist/instantiator.d.ts",
+  "homepage": "https://github.com/dancasey/json-schema-default-instance#readme",
+  "bugs": {
+    "url": "https://github.com/dancasey/json-schema-default-instance/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancasey/json-schema-default-instance.git"
+  },
+  "keywords": [
+    "schema",
+    "json"
+  ],
+  "ava": {
+    "files": [
+      "dist/test.js"
+    ],
+    "verbose": true
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
