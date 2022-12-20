@@ -15,9 +15,10 @@ let styledComponentsPlugin = (config) => {
     ssr = true,
     displayName = true,
     fileName = true,
-    meaninglessFileNames = ['index']
+    meaninglessFileNames = ['index'],
+    namespace = ''
   } = config || {};
-  let opts = { ssr, displayName, fileName, meaninglessFileNames };
+  let opts = { ssr, displayName, fileName, meaninglessFileNames, namespace };
   let scMatchRe = new RegExp(scMatch);
   let filterRe = new RegExp(filter);
   let excludeRe = new RegExp(exclude);
@@ -55,7 +56,7 @@ let styledComponentsPlugin = (config) => {
         output = traverseAndPrint(ast.walk(), {
           ...opts,
           path: args.path,
-          source: source          
+          source: source
         });
 
         return {
