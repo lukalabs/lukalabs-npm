@@ -1,6 +1,6 @@
 {
   "name": "@lukalabs/esbuild-styled-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "esbuild styled-components plugin to replace styled-components/macro",
   "main": "index.js",
   "author": "Alexander Kuznetsov <alexkuz@gmail.com>",
