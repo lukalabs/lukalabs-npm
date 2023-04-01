@@ -1,3 +1,5 @@
+exports = module.exports = traverseAndPrint;
+
 let path = require('path');
 let fs = require('fs');
 let hash = require('./hash');
@@ -238,7 +240,7 @@ function isQuotedString(quoted, str) {
   return quoted === '"' + str + '"' || quoted === "'" + str + "'";
 }
 
-module.exports = function traverseAndPrint(cursor, opts) {
+function traverseAndPrint(cursor, opts) {
   let out = [];
   let lastIndex = 0;
   let source = opts.source;

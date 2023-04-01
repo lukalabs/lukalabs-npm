@@ -1,3 +1,5 @@
+exports = module.exports = murmurhash2_32_gc;
+
 /**
  * JS Implementation of MurmurHash2
  *
@@ -53,5 +55,3 @@ function murmurhash2_32_gc(str) {
 
   return (h >>> 0).toString(36)
 }
-
-module.exports = murmurhash2_32_gc
