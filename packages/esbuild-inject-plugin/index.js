@@ -4,30 +4,25 @@ const fs = require('fs');
 const path = require('path');
 const esbuild = require('esbuild');
 const Module = require('module');
-
-const originalBuild = esbuild.build;
+const createPatchedESBuild = require('./create-patched-esbuild');
 
 const CONFIG_FILE = process.env.ESBUILD_INJECT_PLUGIN_CONFIG || './esbuild-plugins.js';
 
-function build(options) {
-  if (fs.existsSync(CONFIG_FILE)) {
-    const plugins = require(path.resolve(CONFIG_FILE)).plugins;
-    return originalBuild({ ...options, plugins: plugins(options.plugins) });
-  }
-  return originalBuild(options);
-}
-
 const originalRequire = Module.prototype.require;
 
-const ovverideBuild = { ...esbuild, build };
+const patchedESBuild = createPatchedESBuild(
+  require(path.resolve(CONFIG_FILE)).plugins
+);
 
 function overrideRequire(id) {
   if (id === 'esbuild') {
-    return ovverideBuild;
+    return patchedESBuild;
   }
   return originalRequire.apply(this, arguments);
 }
 
-if (Module.prototype.require !== overrideRequire) {
-  Module.prototype.require = overrideRequire;
+if (fs.existsSync(CONFIG_FILE)) {
+  if (Module.prototype.require !== overrideRequire) {
+    Module.prototype.require = overrideRequire;
+  }
 }
