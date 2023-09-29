@@ -1,0 +1,5 @@
+{
+	"private": true,
+	"name": "@lukalabs/esbuild-styled-components/vite",
+	"main": "../vite.js"
+}
